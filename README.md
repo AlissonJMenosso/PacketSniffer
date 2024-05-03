@@ -69,7 +69,7 @@ The 'recvfrom' function is running on our socket, which essentially just receive
 To understand the functions, you should know the basic structures of Ethernet and IP packets:
 
 <p align="center">
-  <img src="[https://user-images.githubusercontent.com/46886724/145045869-97cb7298-bb88-4d10-9e43-099a943d894c.png](https://static.javatpoint.com/tutorial/computer-network/images/ethernet-frame-format.png)" alt="Advent of Code" width="250" height="400" />
+  <img src="https://static.javatpoint.com/tutorial/computer-network/images/ethernet-frame-format.png" alt="Frame Header" width="250" height="400" />
 </p>
 
 - **Ethernet Frame**: The frame includes:
@@ -79,7 +79,7 @@ To understand the functions, you should know the basic structures of Ethernet an
 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/46886724/145045869-97cb7298-bb88-4d10-9e43-099a943d894c.png" alt="Advent of Code" width="250" height="400" />
+  <img src="https://www.pynetlabs.com/wp-content/uploads/2023/12/ipv4-header-image.jpeg" alt="IP Header" width="250" height="400" />
 </p>
 
 - **IP Header (RFC 791)**: The IP packet includes:
