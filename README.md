@@ -68,21 +68,20 @@ The 'recvfrom' function is running on our socket, which essentially just receive
 ## Understanding Packet Structures
 To understand the functions, you should know the basic structures of Ethernet and IP packets:
 
+### Ethernet Header
 <p align="center">
-  <img src="https://static.javatpoint.com/tutorial/computer-network/images/ethernet-frame-format.png" alt="Frame Header" width="400" height="250" />
+  <img src="https://static.javatpoint.com/tutorial/computer-network/images/ethernet-frame-format.png" alt="Frame Header" width="500" height="250" />
 </p>
 
-- **Ethernet Frame**: The frame includes:
   - **Destination Address**: The first 6 bytes represent the destination MAC address.
   - **Source Address**: The next 6 bytes are the source MAC address.
   - **EtherType**: The last 2 bytes are the protocols used, such as IPv4, IPv6, ARP, etc.
 
-
+### IP Packet Header
 <p align="center">
   <img src="https://www.pynetlabs.com/wp-content/uploads/2023/12/ipv4-header-image.jpeg" alt="IP Header" width="400" height="250" />
 </p>
 
-- **IP Header (RFC 791)**: The IP packet includes:
   - **Version and Header Length**: The first byte contains the protocol version and header length.
   - **Type of Service**: Specifies how an upper-layer protocol would like a current datagram to be handled.
   - **Total Length**: The length of the entire IP packet.
