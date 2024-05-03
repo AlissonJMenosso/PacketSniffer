@@ -112,9 +112,10 @@ def ipv4Header(raw):
 ```
 
 ## Running the Scripts
+Again this is meant for a Linux environment
 You will need root privileges to run the raw sockets for how much access it needs.
 ```
 sudo python3 parsingSniffer.py
 ```
 
-**Note:** The script will continuously output parsed packet data until manually stopped, displaying details such as MAC addresses, IP addresses, and protocol information.
+**Note:** The script will continuously print out parsed packets until manually stopped.
