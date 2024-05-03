@@ -58,7 +58,7 @@ To continuously receive data, we create an infinite loop:
 while True:
     print(sox.recvfrom(65565))
 ```
-The 'recvfrom' function is running on our socket, which essentially just receives data through it with the max buffer size of '65565'. Meaning we should be able to caputure packets of all sizes. No discrimination here.
+The 'recvfrom' function is running on our socket, which essentially just receives data through it with the max buffer size of '65565'. Meaning we should be able to capture packets of all sizes. No discrimination here.
 **Note:** Running the program will have a messy output like this, but this can be cleaned up for better readability.
 ```
 \xe7\xfa\'zApa\xbf\x19U\xf9\xe7\xbalV4\xe1\x03\xf8\xcd-\x07\xb6%\x94\xc7\xa3\x03\xdc\x8cQ\x88X\xab\xd5\x06\\\x95\xe0\x87\xa9\xce\xaf\xc0\x9b\xf4\x0ei\xa9\xbc\x0b\xfd=\x8emr\xfcU\x81\x85\xb4\x9a\xf6"t\xd6M-\x1fh\x05\xe7$\x1b\xac\x08\xb0\x85\xdbP5\xad\x1f\xeb\x17\x0b\x85g.e\x05P\x1b,\xce\xd0Q\xa4\xab\xd3\xa6tv\xa4{.\xcd\xfe\t\xb4;\xd3\x9a.ED\xe3\x1cq\x12\xeb>hp\x10\xe6\x9f\xcb\xfb\r\x8c\xf1w\xb9\xc1\xd8\x02\r\xef\xb0q\x15q\n[\xde\r\xa9P\xe08\t_\xa4\xe7\x89m\x0e\x9f\xc2\xddaJL\n\x05\xbb\x90\xe4A\xda\x12\x1a\xf9[\xd8\x9f\xb1^\x19\xb9\xd4\xe9\xa4c\xc0Doz\xb5G\xd3 \x87\x0b\xe1d\x99\x9e\x08\xeb\xb6\xae\x86_@\x98\r\x91)|\xb1\x91r\x9f\xe5\xe4%R\r\xab9\xd6\xea\x04\x92H\x8e;5\xb3\x13\xe5V\xa7\xc8x\xa2\x87\xf5\x99\xb1Y\x05l\xdf\x8dQ\xde\x8bI)~\xeab\xe2\x18\x9d\tA\xd7\x01K\xf1\x18\x7f\xe3|\x9c\xae\xfdr'
@@ -112,8 +112,8 @@ def ipv4Header(raw):
 ```
 
 ## Running the Scripts
-Again this is meant for a Linux environment
 You will need root privileges to run the raw sockets for how much access it needs.
+**Again this is meant for a Linux environment**
 ```
 sudo python3 parsingSniffer.py
 ```
